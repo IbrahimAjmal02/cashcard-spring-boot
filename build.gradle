@@ -22,6 +22,9 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
     testImplementation 'org.springframework.boot:spring-boot-starter-restclient'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher' // See https://docs.gradle.org/8.3/userguide/upgrading_version_8.html#test_framework_implementation_dependencies
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+    implementation 'com.h2database:h2'
 }
 
 tasks.named('test') {
